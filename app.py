@@ -6,14 +6,9 @@ app = Flask(__name__)
 def function():
 	pass
 
-@app.route("/login")
+@app.route("/log")
 def function():
-	return "login.html"
-
-@app.route("/logout")
-def function():
-	return "logout.html"
-
+	return "log.html"
 
 if __name__ == '__main__':
 	app.run(debug=True)
