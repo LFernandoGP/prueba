@@ -6,5 +6,14 @@ app = Flask(__name__)
 def function():
 	pass
 
+@app.route("/login")
+def function():
+	return "login.html"
+
+@app.route("/logout")
+def function():
+	return "logout.html"
+
+
 if __name__ == '__main__':
 	app.run()
