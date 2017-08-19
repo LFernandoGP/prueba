@@ -4,11 +4,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def function():
-	pass
+	return "index.html"
 
-@app.route("/log")
+@app.route("/login")
 def function():
-	return "log.html"
+	return "login.html"
+
+@app.route("/logout")
+def function():
+	return "logout.html"
 
 if __name__ == '__main__':
 	app.run(debug=True)
