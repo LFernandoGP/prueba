@@ -8,6 +8,8 @@ def function():
 
 @app.route("/log")
 def function():
+	if "user" in session:
+		return "index.html"
 	return "log.html"
 
 if __name__ == '__main__':
