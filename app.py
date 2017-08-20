@@ -6,6 +6,10 @@ app = Flask(__name__)
 def function():
 	pass
 
+@app.route("/<name>")
+def function():
+	pass
+
 @app.route("/log")
 def function():
 	return "log.html"
